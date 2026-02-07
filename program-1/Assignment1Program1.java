@@ -15,5 +15,10 @@ public class Assignment1Program1 {
     System.out.println("Please enter a 5-character string: ");
     String fiveCharacterString = input.nextLine();
     System.out.println(" ");
+    System.out.println("Please enter a number in Fahrenheit: ");
+    double temperature = input.nextInt();
+    temperature = ((temperature - 32)* 5)/9;
+    System.out.println(" ");
+    System.out.println(temperature);
   }
 }
