@@ -8,8 +8,8 @@ public class Assignment1Program1 {
     System.out.println("  SSSSSS           SSSSSS");
     System.out.println("       SSS              SSS");
     System.out.println("         SSS              SSS");
-    System.out.println(" SSS     SSS     SSS      SSS");
-    System.out.println("   SSSSSSS         SSSSSSS");
+    System.out.println(" SSS     SSS      SSS     SSS");
+    System.out.println("   SSSSSSS          SSSSSSS");
     System.out.println("");
     Scanner input = new Scanner(System.in);
     System.out.println("Please enter a 5-character string: ");
