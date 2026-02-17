@@ -9,15 +9,18 @@ public class Assignment1Program2 {
     System.out.println("The maximum, 4-digit, base 10 number in base " + baseNum + " is " + maxNumUsingBase);
     System.out.println("Now, enter a base 10 number in the range 0 to " + maxNumUsingBase + " to convert: ");
     int numToConvert = input.nextInt();
-    int covertingNumForEquation = numToConvert;
+    int numToConvertForEquation = numToConvert;
     int newBase = 0;
     int placeValue = 1;
-    while (covertingNumForEquation > 0) {
-      int remainder = covertingNumForEquation % baseNum;
+
+    while (numToConvertForEquation > 0) {
+      int remainder = numToConvertForEquation % baseNum;
       newBase += remainder * placeValue;
       placeValue *= 10;
-      covertingNumForEquation /= baseNum;
+      numToConvertForEquation /= baseNum;
     }
+
     System.out.println(numToConvert + "(base 10) = " + newBase + " (base " + baseNum + ")");
+    input.close();
   }
 }
